@@ -120,7 +120,7 @@ function parseKeywords(raw: string): string[] {
     .filter(tag => tag.length > 0);
 }
 
-export default function ClientComponent({ fileData }: { fileData: JSON[] }) {
+export default function ClientComponent({ fileData }: { fileData: any[] }) {
     
     const { setLastUpdated } = useLastUpdated();
   
